@@ -1,0 +1,68 @@
+<%-include("./layouts/header") %>
+  <div class="container-scroller">
+    <%-include("./layouts/menu") %>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">My Profil</h4>
+                  <form class="form-sample">
+                    <p class="card-description">
+                      Profil info
+                    </p>
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" disabled placeholder="<%= session.fullName %>" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Email</label>
+                          <div class="col-sm-9">
+                            <input type="text" disabled placeholder="<%= session.email %>" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Status</label>
+                          <div class="col-sm-9">
+                            <input type="text" disabled placeholder="<%= session.status %>" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Active</label>
+                          <div class="col-sm-9">
+                            <input type="text"  disabled placeholder="<%= session.active %>" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <%-include("./layouts/footer") %>

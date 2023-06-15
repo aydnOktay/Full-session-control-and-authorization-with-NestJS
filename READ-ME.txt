@@ -1,0 +1,11 @@
+I implemented session control operations with NestJS.
+I wrote clean and understandable code.
+I ensured that the people who will review my project can understand it more easily.
+I created files for each section and established an organized structure.
+Instead of using the HttpExceptions library for error codes, I manually prepared APIs for errors.
+I took basic security measures and handled password reset operations.
+Since it is a small project, I performed session control in RAM and did not create a database.
+For email, you can fill in the gmailUser and gmailPass sections in the src -> tools -> environments file.
+
+Description ;
+I have built a business panel with session control and user authorization using NestJS. The panel consists of three different statuses: CEO, Manager, and Personal, with CEO being the highest authority. When someone signs up, they cannot access the panel until approved by the CEO. Each status has limited permissions within the panel. Additionally, the panel includes a "Forgot Password" feature where users can request a password reset email to reset their password. I have taken measures to ensure that all these processes are secure.

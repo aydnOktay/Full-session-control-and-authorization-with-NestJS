@@ -1,0 +1,55 @@
+<%-include("./layouts/header") %>
+    <div class="container-scroller">
+        <%-include("./layouts/menu") %>
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+
+                        <div class="col-md-12 stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-title">Recent Purchases</p>
+                                    <div class="table-responsive">
+
+                                        <table id="recent-purchases-listing" class="table text-center">
+
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <% for(var i=0 ; i < table2.length ; i++){
+                                                    if (table2[i].active==1) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <%= table2[i].fullName %>
+                                                        </td>
+                                                        <td>
+                                                            <%= table2[i].email %>
+                                                        </td>
+                                                        <td>
+                                                            <%= table2[i].status %>
+                                                        </td>
+                                                    </tr>
+                                                 <%  }
+                                                } %>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- main-panel ends -->
+                </div>
+                <!-- page-body-wrapper ends -->
+            </div>
+            <%-include("./layouts/footer") %>

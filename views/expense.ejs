@@ -1,0 +1,49 @@
+<%-include("./layouts/header") %>
+  <div class="container-scroller">
+    <%-include("./layouts/menu") %>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-md-12 stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title">Recent Purchases</p>
+                    <div class="table-responsive">
+
+                      <table id="recent-purchases-listing" class="table text-center">
+
+                        <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Income</th>
+                              <th>Expense</th>
+                              <th>Profit</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <% for(var i =0 ; i < table.length ; i++){ %>
+                          <tr>
+                              <td><%= table[i].namee %></td>
+                              <td><%= table[i].income %></td>
+                              <td><%= table[i].expense %></td>
+                              <td><%= table[i].profit%></td>
+                          </tr>
+                          <% } %>
+                        </tbody>
+                        
+                      </table>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <%-include("./layouts/footer") %>

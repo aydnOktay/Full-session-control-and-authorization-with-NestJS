@@ -1,0 +1,59 @@
+<%-include("./layouts/header") %>
+    <div class="container-scroller">
+        <%-include("./layouts/menu") %>
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Add Workers</h4>
+                                    <form class="form-sample" method="POST" action="/admin/add-worker">
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Full Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="fullName" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Status</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="status" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Price</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="price" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- main-panel ends -->
+                </div>
+                <!-- page-body-wrapper ends -->
+            </div>
+            <%-include("./layouts/footer") %>
